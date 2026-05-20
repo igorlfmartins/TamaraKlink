@@ -99,20 +99,24 @@
         .stat-glow { animation: glow-pulse 3s ease-in-out infinite; }
         .ice-float { animation: iceberg-drift 6s ease-in-out infinite; }
 
+        /* prevent line-break issues on 16:9 */
+        h1, h2, h3, .pull-quote { text-wrap: balance; overflow-wrap: break-word; word-break: break-word; }
+        .content { overflow: hidden; }
+
         /* thin horizontal rule with gradient */
         .rule-gradient { height:1px; background:linear-gradient(to right, transparent, #a8c4d8, transparent); opacity:0.3; }
 
         /* quote styling */
-        .pull-quote { font-family:'Cormorant', serif; font-style:italic; font-size:clamp(1.4rem,2.8vw,2.1rem); line-height:1.4; color:#dce4ec; }
+        .pull-quote { font-family:'Cormorant', serif; font-style:italic; font-size:clamp(1.55rem,3vw,2.3rem); line-height:1.4; color:#dce4ec; }
 
         /* stat card */
-        .stat-num { font-family:'Cormorant', serif; font-weight:700; font-size:clamp(2.6rem,5vw,4rem); line-height:1; }
+        .stat-num { font-family:'Cormorant', serif; font-weight:700; font-size:clamp(2.8rem,5.2vw,4.2rem); line-height:1; }
 
         /* comparison table rows */
         .compare-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; border-bottom:1px solid rgba(168,196,216,0.08); }
         .compare-row:last-child { border-bottom:none; }
         .compare-cell { padding:0.7rem 1rem; font-size:clamp(0.72rem,1.1vw,0.85rem); }
-        .compare-label { color:#5a6e80; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; }
+        .compare-label { color:#5a6e80; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.08em; }
 
         /* market bar */
         .mkt-bar-track { height:6px; background:rgba(168,196,216,0.1); border-radius:4px; overflow:hidden; }
@@ -140,17 +144,17 @@
         <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1;"></canvas>
         <div class="content" style="max-width:1200px;">
             <div class="reveal" style="margin-bottom:1.2rem;">
-                <span style="font-family:'Manrope',sans-serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;">A Pitch for Sarah Spillane</span>
+                <span style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;">A Pitch for Sarah Spillane</span>
             </div>
-            <h1 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(3rem,7vw,5.8rem);line-height:1.0;color:#dce4ec;margin-bottom:1rem;max-width:700px;">A Story the World Has Never Seen</h1>
+            <h1 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(3.2rem,7.2vw,6rem);line-height:1.0;color:#dce4ec;margin-bottom:1rem;max-width:700px;">A Story the World Has Never Seen</h1>
             <div class="rule-gradient reveal" style="width:120px;margin-bottom:1.2rem;"></div>
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:clamp(0.9rem,1.4vw,1.1rem);color:#9baab8;max-width:480px;line-height:1.7;font-weight:300;">
-                The first woman in recorded history to winter alone in the Arctic.<br>A filmmaker who already proved this story works.<br>One conversation away from cinema.
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:clamp(1rem,1.5vw,1.2rem);color:#9baab8;max-width:480px;line-height:1.7;font-weight:300;">
+                The first woman in recorded history to winter alone in the Arctic — a filmmaker who already proved this story works — one conversation away from cinema.
             </p>
             <div class="reveal" style="margin-top:2.2rem;display:flex;align-items:center;gap:1rem;">
-                <span style="font-family:'Cormorant',serif;font-style:italic;font-size:1.2rem;color:#a8c4d8;">Tamara Klink</span>
+                <span style="font-family:'Cormorant',serif;font-style:italic;font-size:1.28rem;color:#a8c4d8;">Tamara Klink</span>
                 <span style="color:#5a6e80;font-size:0.8rem;">×</span>
-                <span style="font-family:'Cormorant',serif;font-style:italic;font-size:1.2rem;color:#a8c4d8;">Sarah Spillane</span>
+                <span style="font-family:'Cormorant',serif;font-style:italic;font-size:1.28rem;color:#a8c4d8;">Sarah Spillane</span>
             </div>
         </div>
     </div>
@@ -163,12 +167,12 @@
         </div>
         <canvas class="particle-canvas-ambient" style="position:absolute;inset:0;z-index:1;"></canvas>
         <div class="content" style="text-align:center;max-width:820px;">
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:2rem;">The Tension</p>
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:2rem;">The Tension</p>
             <p class="pull-quote reveal">
-                "Every survival film shows us what it means to fight the sea.<br>None has ever shown us what it means<br>to <em>wait</em> inside it."
+                "Every survival film shows us what it means to fight the sea. None has ever shown us what it means to <em>wait</em> inside it."
             </p>
             <div class="rule-gradient reveal" style="width:80px;margin:2rem auto;"></div>
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:clamp(0.88rem,1.3vw,1rem);color:#9baab8;line-height:1.75;font-weight:300;">
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:clamp(0.98rem,1.4vw,1.1rem);color:#9baab8;line-height:1.75;font-weight:300;">
                 Jessica Watson raced the ocean. Tamara Klink lived inside it — frozen, immobile, alone — for eight months. That's not a longer version of the same story. It's a different kind of human experience entirely. The dramatic question shifts from <em>"will she make it?"</em> to something far more disturbing: <em>"who will she be when the ice breaks?"</em>
             </p>
         </div>
@@ -181,24 +185,24 @@
         <canvas class="particle-canvas-ambient" style="position:absolute;inset:0;z-index:1;"></canvas>
         <div class="content" style="display:flex;justify-content:flex-end;">
             <div style="max-width:460px;">
-                <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:1.2rem;">Who Is She</p>
-                <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(2.2rem,4vw,3.2rem);line-height:1.05;color:#dce4ec;margin-bottom:1.4rem;">Tamara Klink</h2>
+                <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:1.2rem;">Who Is She</p>
+                <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(2.4rem,4.2vw,3.4rem);line-height:1.05;color:#dce4ec;margin-bottom:1.4rem;">Tamara Klink</h2>
                 <div class="reveal" style="display:flex;flex-direction:column;gap:0.9rem;">
                     <div style="display:flex;gap:0.9rem;align-items:flex-start;">
-                        <span style="color:#4a7a99;font-size:1.1rem;margin-top:2px;">—</span>
-                        <p style="font-family:'Manrope',sans-serif;font-size:0.85rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Daughter of <strong style="color:#dce4ec;font-weight:500;">Amyr Klink</strong>, Brazil's most celebrated polar explorer</p>
+                        <span style="color:#4a7a99;font-size:1.18rem;margin-top:2px;">—</span>
+                        <p style="font-family:'Manrope',sans-serif;font-size:0.95rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Daughter of <strong style="color:#dce4ec;font-weight:500;">Amyr Klink</strong>, Brazil's most celebrated polar explorer</p>
                     </div>
                     <div style="display:flex;gap:0.9rem;align-items:flex-start;">
-                        <span style="color:#4a7a99;font-size:1.1rem;margin-top:2px;">—</span>
-                        <p style="font-family:'Manrope',sans-serif;font-size:0.85rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Naval architect — she designed parts of her own 10m boat, <em>Sardinha II</em></p>
+                        <span style="color:#4a7a99;font-size:1.18rem;margin-top:2px;">—</span>
+                        <p style="font-family:'Manrope',sans-serif;font-size:0.95rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Naval architect — she designed parts of her own 10m boat, <em>Sardinha II</em></p>
                     </div>
                     <div style="display:flex;gap:0.9rem;align-items:flex-start;">
-                        <span style="color:#4a7a99;font-size:1.1rem;margin-top:2px;">—</span>
-                        <p style="font-family:'Manrope',sans-serif;font-size:0.85rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Published author. Went to Antarctica aged 8. The sea is not her hobby — it's her inheritance</p>
+                        <span style="color:#4a7a99;font-size:1.18rem;margin-top:2px;">—</span>
+                        <p style="font-family:'Manrope',sans-serif;font-size:0.95rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Published author. Went to Antarctica aged 8. The sea is not her hobby — it's her inheritance</p>
                     </div>
                     <div style="display:flex;gap:0.9rem;align-items:flex-start;">
-                        <span style="color:#4a7a99;font-size:1.1rem;margin-top:2px;">—</span>
-                        <p style="font-family:'Manrope',sans-serif;font-size:0.85rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">UNESCO Ambassador. National Geographic feature subject. Filmed everything herself — alone</p>
+                        <span style="color:#4a7a99;font-size:1.18rem;margin-top:2px;">—</span>
+                        <p style="font-family:'Manrope',sans-serif;font-size:0.95rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">UNESCO Ambassador. National Geographic feature subject. Filmed everything herself — alone</p>
                     </div>
                 </div>
             </div>
@@ -213,23 +217,23 @@
             <div class="blob" style="width:200px;height:200px;top:40%;left:40%;background:#0d2233;opacity:0.5;"></div>
         </div>
         <div class="content">
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:0.6rem;">World Records</p>
-            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(1.8rem,3.5vw,2.6rem);color:#dce4ec;margin-bottom:2rem;line-height:1.1;">No qualifier. No subcategory. No asterisk.</h2>
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:0.6rem;">World Records</p>
+            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(2rem,3.8vw,2.8rem);color:#dce4ec;margin-bottom:2rem;line-height:1.1;">No qualifier. No subcategory. No asterisk.</h2>
             <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;">
                 <div style="background:rgba(168,196,216,0.04);border:1px solid rgba(168,196,216,0.09);border-radius:12px;padding:1.5rem;">
                     <div class="stat-num stat-glow" style="color:#a8c4d8;margin-bottom:0.5rem;">8 mo.</div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.78rem;color:#9baab8;line-height:1.55;font-weight:300;margin:0;">Alone in a frozen Arctic fjord. Temperatures reaching −40°C. The boat could not move. Neither could she.</p>
-                    <div style="margin-top:1rem;font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:#4a7a99;">1st woman ever</div>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.88rem;color:#9baab8;line-height:1.55;font-weight:300;margin:0;">Alone in a frozen Arctic fjord. Temperatures reaching −40°F (−40°C). The boat could not move. Neither could she.</p>
+                    <div style="margin-top:1rem;font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#4a7a99;">1st woman ever</div>
                 </div>
                 <div style="background:rgba(168,196,216,0.04);border:1px solid rgba(168,196,216,0.09);border-radius:12px;padding:1.5rem;">
                     <div class="stat-num stat-glow" style="color:#a8c4d8;margin-bottom:0.5rem;">60 days</div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.78rem;color:#9baab8;line-height:1.55;font-weight:300;margin:0;">Greenland to Alaska. The Northwest Passage — one of the most dangerous and remote routes on Earth.</p>
-                    <div style="margin-top:1rem;font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:#4a7a99;">1st Latin American solo</div>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.88rem;color:#9baab8;line-height:1.55;font-weight:300;margin:0;">Greenland to Alaska. The Northwest Passage — one of the most dangerous and remote routes on Earth.</p>
+                    <div style="margin-top:1rem;font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#4a7a99;">1st Latin American solo</div>
                 </div>
                 <div style="background:rgba(168,196,216,0.04);border:1px solid rgba(168,196,216,0.09);border-radius:12px;padding:1.5rem;">
                     <div class="stat-num stat-glow" style="color:#a8c4d8;margin-bottom:0.5rem;">2nd</div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.78rem;color:#9baab8;line-height:1.55;font-weight:300;margin:0;">In all of human history. Second woman ever to complete the Northwest Passage solo — at age 28.</p>
-                    <div style="margin-top:1rem;font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:#4a7a99;">All-time global record</div>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.88rem;color:#9baab8;line-height:1.55;font-weight:300;margin:0;">In all of human history. Second woman ever to complete the Northwest Passage solo — at age 28.</p>
+                    <div style="margin-top:1rem;font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#4a7a99;">All-time global record</div>
                 </div>
             </div>
         </div>
@@ -241,11 +245,11 @@
         <div class="photo-overlay" style="background:linear-gradient(to top, rgba(7,10,13,0.95) 30%, rgba(7,10,13,0.3) 70%, rgba(7,10,13,0.6) 100%);"></div>
         <canvas class="particle-canvas-ambient" style="position:absolute;inset:0;z-index:1;"></canvas>
         <div class="content" style="display:flex;flex-direction:column;justify-content:flex-end;height:100%;padding-bottom:5rem;">
-            <p class="pull-quote reveal" style="max-width:600px;font-size:clamp(1.3rem,2.5vw,1.9rem);">
+            <p class="pull-quote reveal" style="max-width:600px;font-size:clamp(1.45rem,2.7vw,2.1rem);">
                 "Eight months. Polar night. Ice on every side.<br>Zero possibility of rescue. And she filmed all of it — herself."
             </p>
             <div class="rule-gradient reveal" style="width:100px;margin-top:1.2rem;"></div>
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;color:#5a6e80;margin-top:0.7rem;letter-spacing:0.06em;">Greenland, 2023—2024 · Sardinha II · -40°C</p>
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.88rem;color:#5a6e80;margin-top:0.7rem;letter-spacing:0.06em;">Greenland, 2023—2024 · Sardinha II · -40°F (-40°C)</p>
         </div>
     </div>
 
@@ -256,13 +260,13 @@
             <div class="blob" style="width:250px;height:250px;bottom:-50px;right:5%;background:#162030;opacity:0.7;"></div>
         </div>
         <div class="content">
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:0.5rem;">Not a remake. A companion.</p>
-            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(1.8rem,3vw,2.4rem);color:#dce4ec;margin-bottom:1.4rem;line-height:1.1;">True Spirit opened the door.<br>Tamara walks through a different one.</h2>
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:0.5rem;">Not a remake. A companion.</p>
+            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(2rem,3.2vw,2.6rem);color:#dce4ec;margin-bottom:1.4rem;line-height:1.1;">True Spirit opened the door. Tamara walks through a different one.</h2>
             <div class="reveal" style="background:rgba(168,196,216,0.03);border:1px solid rgba(168,196,216,0.09);border-radius:12px;overflow:hidden;">
                 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:rgba(168,196,216,0.06);padding:0.6rem 1rem;">
-                    <span style="font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:#5a6e80;"></span>
-                    <span style="font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:#5a6e80;">True Spirit</span>
-                    <span style="font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:#a8c4d8;">Tamara Klink</span>
+                    <span style="font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#5a6e80;"></span>
+                    <span style="font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#5a6e80;">True Spirit</span>
+                    <span style="font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#a8c4d8;">Tamara Klink</span>
                 </div>
                 <div class="compare-row"><div class="compare-cell compare-label">Core question</div><div class="compare-cell" style="color:#9baab8;font-size:0.8rem;">"Will she make it around the world?"</div><div class="compare-cell" style="color:#dce4ec;font-size:0.8rem;">"Who will she be when the ice breaks?"</div></div>
                 <div class="compare-row"><div class="compare-cell compare-label">Type of drama</div><div class="compare-cell" style="color:#9baab8;font-size:0.8rem;">Race against time</div><div class="compare-cell" style="color:#dce4ec;font-size:0.8rem;">Psychological survival in stillness</div></div>
@@ -280,11 +284,11 @@
         <div class="photo-overlay" style="background:linear-gradient(135deg, rgba(7,10,13,0.96) 40%, rgba(7,10,13,0.65) 100%);"></div>
         <canvas class="particle-canvas-ambient" style="position:absolute;inset:0;z-index:1;"></canvas>
         <div class="content" style="max-width:680px;">
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:1.2rem;">The Honest Paradox</p>
-            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:600;font-size:clamp(2rem,4vw,3rem);color:#dce4ec;line-height:1.1;margin-bottom:1.4rem;">Her father spent a winter alone in the South Atlantic.<br><em style="color:#a8c4d8;">She spent one in the Arctic.</em></h2>
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:1.2rem;">The Honest Paradox</p>
+            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:600;font-size:clamp(2.2rem,4.2vw,3.2rem);color:#dce4ec;line-height:1.1;margin-bottom:1.4rem;">Her father spent a winter alone in the South Atlantic. <em style="color:#a8c4d8;">She spent one in the Arctic.</em></h2>
             <div class="rule-gradient reveal" style="width:80px;margin-bottom:1.4rem;"></div>
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:clamp(0.85rem,1.3vw,0.95rem);color:#9baab8;line-height:1.75;font-weight:300;">
-                This isn't a daughter following her father's footsteps. It's something more uncomfortable — and more cinematic: a daughter who grew up inside a legend so great it left no room to simply live, and who chose the most extreme edge of the planet to find out what she was when no story preceded her.<br><br>The ice doesn't know who Amyr Klink is. That's exactly why she went.
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:clamp(0.95rem,1.4vw,1.05rem);color:#9baab8;line-height:1.75;font-weight:300;">
+                This isn't a daughter following her father's footsteps. It's something more uncomfortable — and more cinematic: a daughter who grew up inside a legend so great it left no room to simply live, and who chose the most extreme edge of the planet to find out what she was when no story preceded her. The ice doesn't know who Amyr Klink is. That's exactly why she went.
             </p>
         </div>
     </div>
@@ -297,24 +301,24 @@
             <div class="blob" style="width:200px;height:200px;top:50%;left:45%;background:#0d2233;opacity:0.5;"></div>
         </div>
         <div class="content">
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:0.5rem;">Why Netflix. Why Global. Why Now.</p>
-            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(1.7rem,3vw,2.4rem);color:#dce4ec;margin-bottom:1.6rem;line-height:1.1;">Brazilian stories are already traveling far.</h2>
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:0.5rem;">Why Netflix. Why Global. Why Now.</p>
+            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(1.9rem,3.2vw,2.6rem);color:#dce4ec;margin-bottom:1.6rem;line-height:1.1;">Brazilian stories are already traveling far.</h2>
             <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.4rem;">
                 <div style="background:rgba(168,196,216,0.04);border:1px solid rgba(168,196,216,0.09);border-radius:10px;padding:1.2rem;">
-                    <div style="font-family:'Cormorant',serif;font-weight:700;font-size:2rem;color:#a8c4d8;line-height:1;">#2</div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.75rem;color:#9baab8;margin:0.4rem 0 0;line-height:1.5;font-weight:300;">Brazil is Netflix's second largest market globally. 20M+ subscribers.</p>
+                    <div style="font-family:'Cormorant',serif;font-weight:700;font-size:2.2rem;color:#a8c4d8;line-height:1;white-space:nowrap;">#2</div>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#9baab8;margin:0.4rem 0 0;line-height:1.5;font-weight:300;">Brazil is Netflix's second largest market globally. 20M+ subscribers.</p>
                 </div>
                 <div style="background:rgba(168,196,216,0.04);border:1px solid rgba(168,196,216,0.09);border-radius:10px;padding:1.2rem;">
-                    <div style="font-family:'Cormorant',serif;font-weight:700;font-size:2rem;color:#a8c4d8;line-height:1;">+60%</div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.75rem;color:#9baab8;margin:0.4rem 0 0;line-height:1.5;font-weight:300;">Growth in global audience for Brazilian Netflix originals. H2 2025.</p>
+                    <div style="font-family:'Cormorant',serif;font-weight:700;font-size:2.2rem;color:#a8c4d8;line-height:1;white-space:nowrap;">+60%</div>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#9baab8;margin:0.4rem 0 0;line-height:1.5;font-weight:300;">Growth in global audience for Brazilian Netflix originals. H2 2025.</p>
                 </div>
                 <div style="background:rgba(168,196,216,0.04);border:1px solid rgba(168,196,216,0.09);border-radius:10px;padding:1.2rem;">
-                    <div style="font-family:'Cormorant',serif;font-weight:700;font-size:2rem;color:#a8c4d8;line-height:1;">50M+</div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.75rem;color:#9baab8;margin:0.4rem 0 0;line-height:1.5;font-weight:300;">Global views of <em>Caramelo</em>, a Brazilian Netflix original. Reached worldwide top 15.</p>
+                    <div style="font-family:'Cormorant',serif;font-weight:700;font-size:2.2rem;color:#a8c4d8;line-height:1;white-space:nowrap;">50M+</div>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#9baab8;margin:0.4rem 0 0;line-height:1.5;font-weight:300;">Global views of <em>Caramelo</em>, a Brazilian Netflix original. Reached worldwide top 15.</p>
                 </div>
             </div>
             <div class="reveal">
-                <p style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#9baab8;line-height:1.7;font-weight:300;">
+                <p style="font-family:'Manrope',sans-serif;font-size:0.92rem;color:#9baab8;line-height:1.7;font-weight:300;">
                     <em>Society of the Snow</em> (Spain): ~100M views. <em>Nowhere</em> (Spain): a woman surviving alone at sea in a container, went viral globally. Tamara's story is <strong style="color:#dce4ec;font-weight:500;">factually more extreme</strong> than either of those fictions. The real events are more dramatic than anything a screenwriter invented.
                 </p>
             </div>
@@ -327,24 +331,24 @@
         <div class="photo-overlay" style="background:linear-gradient(to right, rgba(7,10,13,0.97) 50%, rgba(7,10,13,0.5) 100%);"></div>
         <canvas class="particle-canvas-ambient" style="position:absolute;inset:0;z-index:1;"></canvas>
         <div class="content" style="max-width:580px;">
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:1.2rem;">The Open Space</p>
-            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(2rem,3.8vw,2.9rem);color:#dce4ec;line-height:1.1;margin-bottom:1.2rem;">A documentary exists.<br>A <em style="color:#a8c4d8;">narrative feature film</em> does not.</h2>
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a6e80;margin-bottom:1.2rem;">The Open Space</p>
+            <h2 class="reveal" style="font-family:'Cormorant',serif;font-weight:700;font-size:clamp(2.2rem,4vw,3.1rem);color:#dce4ec;line-height:1.1;margin-bottom:1.2rem;">A documentary exists. A <em style="color:#a8c4d8;">narrative feature film</em> does not.</h2>
             <div class="rule-gradient reveal" style="width:80px;margin-bottom:1.4rem;"></div>
             <div class="reveal" style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:1.4rem;">
                 <div style="display:flex;gap:0.8rem;align-items:flex-start;">
                     <span style="color:#4a7a99;margin-top:3px;">✓</span>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Maria Farinha Films is producing a documentary, co-directed by Tamara and Estela Renner — currently in post-production</p>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.92rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">Maria Farinha Films is producing a documentary, co-directed by Tamara and Estela Renner — currently in post-production</p>
                 </div>
                 <div style="display:flex;gap:0.8rem;align-items:flex-start;">
                     <span style="color:#4a7a99;margin-top:3px;">✓</span>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">A documentary about Jessica Watson didn't prevent <em>True Spirit</em> from being made — they serve different audiences</p>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.92rem;color:#9baab8;line-height:1.6;font-weight:300;margin:0;">A documentary about Jessica Watson didn't prevent <em>True Spirit</em> from being made — they serve different audiences</p>
                 </div>
                 <div style="display:flex;gap:0.8rem;align-items:flex-start;">
                     <span style="color:#a8c4d8;margin-top:3px;font-weight:600;">→</span>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#dce4ec;line-height:1.6;font-weight:400;margin:0;"><strong>No one holds the rights for a fictional adaptation. That space is open.</strong></p>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.92rem;color:#dce4ec;line-height:1.6;font-weight:400;margin:0;"><strong>No one holds the rights for a fictional adaptation. That space is open.</strong></p>
                 </div>
             </div>
-            <p class="reveal" style="font-family:'Cormorant',serif;font-style:italic;font-size:1.05rem;color:#5a6e80;line-height:1.6;">The model is identical to True Spirit. Same structure. Higher stakes. And the director who already proved this story works is exactly the one reading this.</p>
+            <p class="reveal" style="font-family:'Cormorant',serif;font-style:italic;font-size:1.12rem;color:#5a6e80;line-height:1.6;">The model is identical to True Spirit. Same structure. Higher stakes. And the director who already proved this story works is exactly the one reading this.</p>
         </div>
     </div>
 
@@ -358,21 +362,21 @@
         <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1;"></canvas>
         <div class="content" style="display:flex;flex-direction:column;justify-content:flex-end;height:100%;padding-bottom:6rem;">
             <p class="reveal" style="font-family:'Cormorant',serif;font-style:italic;font-size:clamp(1.4rem,2.8vw,2rem);color:#dce4ec;max-width:700px;line-height:1.45;margin-bottom:1.4rem;">
-                "Tamara Klink is the first woman in history to winter alone in the Arctic, the first Latin American to complete the Northwest Passage solo, and the daughter of Brazil's greatest explorer — and she filmed every moment herself, alone, at −40°C."
+                "Tamara Klink is the first woman in history to winter alone in the Arctic, the first Latin American to complete the Northwest Passage solo, and the daughter of Brazil's greatest explorer — and she filmed every moment herself, alone, at −40°F (−40°C)."
             </p>
             <div class="rule-gradient reveal" style="width:120px;margin-bottom:1.2rem;"></div>
-            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.82rem;color:#9baab8;line-height:1.7;font-weight:300;max-width:580px;">
-                The thematic DNA is identical to True Spirit. The dramatic stakes are higher. The historical significance is greater.<br>The right filmmaker already exists. And she has already proven this story works.
+            <p class="reveal" style="font-family:'Manrope',sans-serif;font-size:0.92rem;color:#9baab8;line-height:1.7;font-weight:300;max-width:580px;">
+                The thematic DNA is identical to True Spirit. The dramatic stakes are higher. The historical significance is greater. The right filmmaker already exists — and she has already proven this story works.
             </p>
             <div class="reveal" style="margin-top:1.6rem;display:flex;gap:2rem;align-items:center;">
                 <div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;color:#5a6e80;margin:0 0 0.2rem;">Presented by</p>
-                    <p style="font-family:'Cormorant',serif;font-style:italic;font-size:1.1rem;color:#a8c4d8;margin:0;">Igor Martins · UP Studio</p>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;color:#5a6e80;margin:0 0 0.2rem;">Presented by</p>
+                    <p style="font-family:'Cormorant',serif;font-style:italic;font-size:1.18rem;color:#a8c4d8;margin:0;">Igor Martins · UP Studio</p>
                 </div>
                 <div style="width:1px;height:36px;background:rgba(168,196,216,0.2);"></div>
                 <div>
-                    <p style="font-family:'Manrope',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;color:#5a6e80;margin:0 0 0.2rem;">For</p>
-                    <p style="font-family:'Cormorant',serif;font-style:italic;font-size:1.1rem;color:#a8c4d8;margin:0;">Sarah Spillane · Director</p>
+                    <p style="font-family:'Manrope',sans-serif;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;color:#5a6e80;margin:0 0 0.2rem;">For</p>
+                    <p style="font-family:'Cormorant',serif;font-style:italic;font-size:1.18rem;color:#a8c4d8;margin:0;">Sarah Spillane · Director</p>
                 </div>
             </div>
         </div>
